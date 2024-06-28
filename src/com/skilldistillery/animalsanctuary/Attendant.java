@@ -6,9 +6,13 @@ public class Attendant {
 
 	public void makeRounds(Animal[] animals) {
 		Random rand = new Random();
+		System.out.println("Another wonderful day at the zoo!");
 		for (Animal animal : animals) {
+			int amount = rand.nextInt(10);
 			if (animal != null) {
-				System.out.println("I am feeding " + animal.getName() + " " + rand.nextInt(10) + " foods");
+				System.out.println("I am feeding " + animal.getName() + " " + amount + " foods");
+				animal.makeNoise(); 
+				animal.eatFood(amount);
 			} else {
 				System.out.println("This enclosure's empty");
 			}

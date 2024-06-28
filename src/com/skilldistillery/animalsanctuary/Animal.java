@@ -1,6 +1,6 @@
 package com.skilldistillery.animalsanctuary;
 
-public class Animal {
+public class Animal extends Sanctuary{
 	private String name;
 	
 	public void makeNoise() {
