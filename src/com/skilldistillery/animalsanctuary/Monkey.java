@@ -10,4 +10,5 @@ public class Monkey extends Animal{
 	public void eatFood(int amount) {
 		System.out.println(noise + " I'm eating " + amount + " bananas!");
 	}
+
 }
