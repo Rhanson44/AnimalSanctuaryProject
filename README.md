@@ -1,4 +1,4 @@
-# *AnimalSanctuaryProject*
+# **AnimalSanctuaryProject**
 
 ## Project Overview
 
@@ -31,8 +31,8 @@ Model an animal sanctuary in which animals are cared for by an attendant
 
 ## Technologies used:
 
-![image](/Users/ryanhanson/Downloads/Git-Emblem.jpg "Git")
-![image](/Users/ryanhanson/Downloads/eclipse-logo.png "Eclipse")
+![image](/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-img/Git-Emblem.jpg "Git")
+![image](/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-img/eclipse-logo.png "Eclipse")
 
 ## Lessons learned:
 
