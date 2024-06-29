@@ -1,7 +1,5 @@
 package com.skilldistillery.animalsanctuary;
 
-import java.util.Arrays;
-
 public class Sanctuary {
 	private Animal[] animals;
 	private Attendant attendant;
@@ -40,6 +38,13 @@ public class Sanctuary {
 			animals[whichAnimal] = null;
 		} 
 		return animals;
+	}
+	
+	public boolean isValidIndex(int whichAnimal) {
+		if (whichAnimal >= animals.length) {
+			System.out.println("Please enter a valid enclosure");
+		}
+		return false;
 	}
 	
 	public void startAttendantRounds() {

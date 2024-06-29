@@ -4,7 +4,7 @@ public class Animal {
 	private String name;
 	
 	public void makeNoise() {
-		
+		System.out.println("*generic animal noise*");
 	}
 	
 	public void eatFood(int amount) {

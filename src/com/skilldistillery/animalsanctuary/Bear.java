@@ -8,6 +8,6 @@ public class Bear extends Animal{
 	}
 	@Override
 	public void eatFood(int amount) {
-		System.out.println(noise + " I'm eating " + amount + " honeycombs!");
+		System.out.println(noise + " I'm munching on " + amount + " honeycombs");
 	}
 }

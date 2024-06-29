@@ -9,7 +9,7 @@ public class Monkey extends Animal{
 	}
 	@Override
 	public void eatFood(int amount) {
-		System.out.println(noise + " I'm eating " + amount + " bananas!");
+		System.out.println(noise + " I love eating " + amount + " bananas!");
 	}
 
 }
