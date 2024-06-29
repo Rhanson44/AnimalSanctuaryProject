@@ -31,8 +31,11 @@ Model an animal sanctuary in which animals are cared for by an attendant
 
 ## Technologies used:
 
-![image](/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-img/Git-Emblem.jpg "Git")
-![image](/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-img/eclipse-logo.png "Eclipse")
+<p> <img src= "/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-Img/eclipse-logo.png" alt= "image" 
+width= "50" height= "50"> Eclipse IDE <br>
+
+<img src= "/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-Img/Git-Emblem.jpg" alt= "image"
+width= "50" height= "50"> Git </p>
 
 ## Lessons learned:
 
