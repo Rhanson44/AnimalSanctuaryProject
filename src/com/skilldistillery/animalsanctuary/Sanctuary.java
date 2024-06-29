@@ -1,8 +1,12 @@
 package com.skilldistillery.animalsanctuary;
 
 public class Sanctuary {
-	private Animal[] animals = new Animal[5];
+	private Animal[] animals;
 	private Attendant attendant;
+	
+	public Sanctuary(int size) {
+		this.animals = new Animal[size];
+	}
 
 	public void setAttendant(Attendant attendant) {
 		this.attendant = attendant;

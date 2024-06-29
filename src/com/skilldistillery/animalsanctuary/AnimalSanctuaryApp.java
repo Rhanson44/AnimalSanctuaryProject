@@ -12,7 +12,9 @@ public class AnimalSanctuaryApp {
 	}
 
 	private void launchApp() {
-		Sanctuary sanctuary = new Sanctuary();
+		System.out.println("How many animals would you like to hold in our sanctuary?");
+		int arrSize = scan.nextInt();
+		Sanctuary sanctuary = new Sanctuary(arrSize);
 		Attendant attendant = new Attendant();
 		sanctuary.setAttendant(attendant);
 		boolean isTrue = true;
