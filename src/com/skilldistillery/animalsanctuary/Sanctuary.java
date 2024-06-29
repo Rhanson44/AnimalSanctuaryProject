@@ -17,7 +17,7 @@ public class Sanctuary {
 			if (animals[i] == null) {
 				System.out.println("This enclosure is empty");
 			} else {
-				System.out.println(animals[i].getName());
+				System.out.println(animals[i].getClass().getSimpleName() + " " + animals[i].getName());
 			}
 		}
 	}
