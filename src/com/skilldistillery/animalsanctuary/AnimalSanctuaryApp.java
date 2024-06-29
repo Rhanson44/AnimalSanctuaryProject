@@ -31,7 +31,7 @@ public class AnimalSanctuaryApp {
 			int input = scan.nextInt();
 			scan.nextLine();
 			if (animalsAdded >= sanctuary.getAnimals().length && input == 2) {
-				sanctuary.expand();
+				sanctuary.setAnimals(sanctuary.expand());
 				System.out.println("Sanctuary expanded to include " + sanctuary.getAnimals().length + " animals!");
 			}
 			switch (input) {

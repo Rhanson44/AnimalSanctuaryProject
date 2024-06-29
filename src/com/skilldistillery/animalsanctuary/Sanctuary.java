@@ -1,5 +1,7 @@
 package com.skilldistillery.animalsanctuary;
 
+import java.util.Arrays;
+
 public class Sanctuary {
 	private Animal[] animals;
 	private Attendant attendant;
@@ -45,8 +47,11 @@ public class Sanctuary {
 	}
 
 	public Animal[] expand() {
-		this.animals = new Animal[animals.length * 2];
-		return animals;
+		Animal[] animals2 = new Animal[animals.length * 2];
+		for (int i = 0; i < animals.length; i++) {
+			animals2[i] = animals[i];
+		}
+		return animals2;
 	}
 	
 	public Animal[] getAnimals() {
