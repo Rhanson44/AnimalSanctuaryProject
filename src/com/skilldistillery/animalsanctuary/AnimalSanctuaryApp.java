@@ -16,6 +16,7 @@ public class AnimalSanctuaryApp {
 		Attendant attendant = new Attendant();
 		sanctuary.setAttendant(attendant);
 		boolean isTrue = true;
+		int animalsAdded = 0;
 		while (isTrue) {
 			System.out.println("###################");
 			System.out.println("Select an option: ");
@@ -26,6 +27,11 @@ public class AnimalSanctuaryApp {
 			System.out.println("###################");
 			int input = scan.nextInt();
 			scan.nextLine();
+			if (animalsAdded >= sanctuary.getAnimals().length && input == 2) {
+				System.out.println("The sanctuary is full, sorry!");
+				System.out.println("Please select a different option");
+				input = scan.nextInt();
+			}
 			switch (input) {
 			case 1:
 				sanctuary.listAnimals();
@@ -37,12 +43,15 @@ public class AnimalSanctuaryApp {
 				if (addAnimal.equalsIgnoreCase("Monkey")) {
 					animal = new Monkey();
 					sanctuary.addAnimal(animal);
+					animalsAdded++;
 				} else if(addAnimal.equalsIgnoreCase("Bear")) {
 					animal = new Bear();
 					sanctuary.addAnimal(animal);
+					animalsAdded++;
 				} else if (addAnimal.equalsIgnoreCase("Snake")) {
 					animal = new Snake();
 					sanctuary.addAnimal(animal);
+					animalsAdded++;
 				} else {
 					System.out.println("Invalid animal");
 					break;
