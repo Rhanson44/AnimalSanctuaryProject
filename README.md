@@ -1,12 +1,12 @@
 # **AnimalSanctuaryProject**
 
-## Project Overview
+## Project Overview:
 
-### Objective: 
+### Objective 
 
 Model an animal sanctuary in which animals are cared for by an attendant
 
-### Sub-objectives:
+### Sub-objectives
 
 - Define an animal parent class which models behaviors of at least three animal type subclasses
 - Apply polymorphism to specialize attributes of each animal subclass
@@ -14,14 +14,14 @@ Model an animal sanctuary in which animals are cared for by an attendant
 - Create a sanctuary class which can list the animals present, add an animal, and initialize attendant rounds
 - Implement a sanctuary app class with a main method to print a menu, allowing the user to call respective methods
 
-### Stretch goals:
+### Stretch goals
 
 - Allow the user to determine the size of the sanctuary
 - Add the option to remove an animal
 - When an animal is listed, output the name of its class
 - When capacity is reached, create a new array of double its size and copy the previous array's contents
 
-## Coding concepts utilized:
+## Coding concepts utilized
 
 - Object Oriented Programming: Abstraction, Polymorphism, Inheritance, Encapsulation
 - Calling super class methods and identifying this. objects
@@ -29,14 +29,14 @@ Model an animal sanctuary in which animals are cared for by an attendant
 - Define class state and behavior
 - Various Java libraries (Scanner, Random)
 
-## Technologies used:
+## Technologies used
 
-<p> <img src= "/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-Img/eclipse-logo.png" alt= "image" 
+<p> <img src= "https://cdn.freebiesupply.com/logos/large/2x/eclipse-11-logo-png-transparent.png" alt= "image" 
 width= "50" height= "50"> Eclipse IDE <br>
 
-<img src= "/Users/ryanhanson/SD/Java/workspace/AnimalSanctuary/readme-Img/Git-Emblem.jpg" alt= "image"
+<img src= "https://1000logos.net/wp-content/uploads/2020/08/Git-Emblem.jpg" alt= "image"
 width= "50" height= "50"> Git </p>
 
-## Lessons learned:
+## Lessons learned
 
 - Deepened understanding of the four pillars of OOP
