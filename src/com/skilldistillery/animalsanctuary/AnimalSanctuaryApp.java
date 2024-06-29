@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class AnimalSanctuaryApp {
 	Sanctuary sanctuary;
 	Scanner scan = new Scanner(System.in);
+	int animalsAdded = 0;
 
 	public static void main(String[] args) {
 		AnimalSanctuaryApp app = new AnimalSanctuaryApp();
@@ -14,14 +15,13 @@ public class AnimalSanctuaryApp {
 	private void launchApp() {
 		System.out.println("How many animals would you like to hold in our sanctuary?");
 		int arrSize = scan.nextInt();
-		
+
 		Sanctuary sanctuary = new Sanctuary(arrSize);
 		Attendant attendant = new Attendant();
 		sanctuary.setAttendant(attendant);
-		
+
 		boolean isTrue = true;
-		int animalsAdded = 0;
-		
+
 		while (isTrue) {
 			System.out.println("######################");
 			System.out.println("Select an option: ");
@@ -45,12 +45,11 @@ public class AnimalSanctuaryApp {
 				System.out.println("Choose an animal to add: Monkey, Bear, Snake");
 				String addAnimal = scan.nextLine();
 				Animal animal = null;
-				
 				if (addAnimal.equalsIgnoreCase("Monkey")) {
 					animal = new Monkey();
 					sanctuary.addAnimal(animal);
 					animalsAdded++;
-				} else if(addAnimal.equalsIgnoreCase("Bear")) {
+				} else if (addAnimal.equalsIgnoreCase("Bear")) {
 					animal = new Bear();
 					sanctuary.addAnimal(animal);
 					animalsAdded++;
@@ -62,7 +61,7 @@ public class AnimalSanctuaryApp {
 					System.out.println("Invalid animal");
 					break;
 				}
-				
+
 				System.out.println("Choose a name for the animal");
 				String addAnimalName = scan.nextLine();
 				animal.setName(addAnimalName);
@@ -71,9 +70,10 @@ public class AnimalSanctuaryApp {
 				sanctuary.startAttendantRounds();
 				break;
 			case 4:
-				System.out.println("Select an animal - position in list '0 -> " + (sanctuary.getAnimals().length - 1) + "'");
+				System.out.println(
+						"Select an animal - position in list '0 -> " + (sanctuary.getAnimals().length - 1) + "'");
 				int animalChoice = scan.nextInt();
-				if(sanctuary.isValidIndex(animalChoice)) {		
+				if (sanctuary.isValidIndex(animalChoice)) {
 					sanctuary.removeAnimal(animalChoice);
 				}
 				break;
@@ -83,5 +83,4 @@ public class AnimalSanctuaryApp {
 			}
 		}
 	}
-
 }
