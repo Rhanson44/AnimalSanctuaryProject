@@ -31,9 +31,8 @@ public class AnimalSanctuaryApp {
 			int input = scan.nextInt();
 			scan.nextLine();
 			if (animalsAdded >= sanctuary.getAnimals().length && input == 2) {
-				System.out.println("The sanctuary is full, sorry!");
-				System.out.println("Please select a different option");
-				input = scan.nextInt();
+				sanctuary.expand();
+				System.out.println("Sanctuary expanded to include " + sanctuary.getAnimals().length + " animals!");
 			}
 			switch (input) {
 			case 1:

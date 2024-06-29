@@ -44,6 +44,11 @@ public class Sanctuary {
 		attendant.makeRounds(animals);
 	}
 
+	public Animal[] expand() {
+		this.animals = new Animal[animals.length * 2];
+		return animals;
+	}
+	
 	public Animal[] getAnimals() {
 		return animals;
 	}
@@ -51,5 +56,6 @@ public class Sanctuary {
 	public void setAnimals(Animal[] animals) {
 		this.animals = animals;
 	}
+
 
 }
