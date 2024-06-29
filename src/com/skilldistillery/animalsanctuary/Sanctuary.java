@@ -32,7 +32,14 @@ public class Sanctuary {
 			}
 		}
 	}
-
+	
+	public Animal[] removeAnimal(int whichAnimal) {
+		if (animals[whichAnimal] != null) {
+			animals[whichAnimal] = null;
+		} 
+		return animals;
+	}
+	
 	public void startAttendantRounds() {
 		attendant.makeRounds(animals);
 	}
@@ -40,4 +47,9 @@ public class Sanctuary {
 	public Animal[] getAnimals() {
 		return animals;
 	}
+
+	public void setAnimals(Animal[] animals) {
+		this.animals = animals;
+	}
+
 }

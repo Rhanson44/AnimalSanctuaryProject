@@ -20,13 +20,14 @@ public class AnimalSanctuaryApp {
 		boolean isTrue = true;
 		int animalsAdded = 0;
 		while (isTrue) {
-			System.out.println("###################");
+			System.out.println("######################");
 			System.out.println("Select an option: ");
 			System.out.println("1. List animals");
 			System.out.println("2. Add new animal");
 			System.out.println("3. Attendant rounds");
-			System.out.println("4. Quit");
-			System.out.println("###################");
+			System.out.println("4. Rehabilitate animal");
+			System.out.println("5. Quit");
+			System.out.println("######################");
 			int input = scan.nextInt();
 			scan.nextLine();
 			if (animalsAdded >= sanctuary.getAnimals().length && input == 2) {
@@ -66,6 +67,11 @@ public class AnimalSanctuaryApp {
 				sanctuary.startAttendantRounds();
 				break;
 			case 4:
+				System.out.println("Select an animal - position in list '0 -> max'");
+				int animalChoice = scan.nextInt();
+				sanctuary.removeAnimal(animalChoice);
+				break;
+			case 5:
 				isTrue = false;
 				break;
 			}
