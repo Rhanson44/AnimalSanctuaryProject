@@ -74,7 +74,7 @@ public class AnimalSanctuaryApp {
 						"Select an animal - position in list '0 -> " + (sanctuary.getAnimals().length - 1) + "'");
 				int animalChoice = scan.nextInt();
 				if (sanctuary.isValidIndex(animalChoice)) {
-					sanctuary.removeAnimal(animalChoice);
+					sanctuary.setAnimals(sanctuary.removeAnimal(animalChoice));
 				}
 				break;
 			case 5:

@@ -34,17 +34,22 @@ public class Sanctuary {
 	}
 	
 	public Animal[] removeAnimal(int whichAnimal) {
-		if (animals[whichAnimal] != null) {
-			animals[whichAnimal] = null;
+		Animal[] animalsRem = new Animal[animals.length];
+		for (int i = 0; i < animals.length; i++) {
+			if (animals[whichAnimal] != null) {
+				animals[whichAnimal] = null;
+				animalsRem[i] = animals[i];
+			}
 		} 
-		return animals;
+		return animalsRem;
 	}
 	
 	public boolean isValidIndex(int whichAnimal) {
 		if (whichAnimal >= animals.length) {
 			System.out.println("Please enter a valid enclosure");
+			return false;
 		}
-		return false;
+		return true;
 	}
 	
 	public void startAttendantRounds() {
